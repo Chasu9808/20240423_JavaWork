@@ -4,7 +4,7 @@ public class PersonTest {
 
 	public static void main(String[] args) {
 		
-		Object [] testMemberObjects = new Object[4];
+		Person [] testMemberPerson = new Person[4];
 		
 		hongjintae hongJintaeLion = new hongjintae();
 		
@@ -18,33 +18,32 @@ public class PersonTest {
 		
 			
 		
-		testMemberObjects[0] = hongJintaeLion;
-		testMemberObjects[1] = leehansolLion;
-		testMemberObjects[2] = limchaesuLion;
-		testMemberObjects[3] = moonjungseobLion;
+		testMemberPerson[0] = hongJintaeLion;
+		testMemberPerson[1] = leehansolLion;
+		testMemberPerson[2] = limchaesuLion;
+		testMemberPerson[3] = moonjungseobLion;
 		
 		
-		for (Object object : testMemberObjects) 
+		for (Person person : testMemberPerson) 
 		{
-			Object object1 = object;
 		
-			if(object1 instanceof hongjintae) {
-				hongjintae test = (hongjintae)object1;
+			if(person instanceof hongjintae) {
+				hongjintae test = (hongjintae)person;
 				test.sleep();
 			} 
-			else if (object1 instanceof leehansol) 
+			else if (person instanceof leehansol) 
 			{
-				leehansol test1 = (leehansol)object1;
+				leehansol test1 = (leehansol)person;
 				test1.speak();
 			}
-			else if (object1 instanceof limchaesu) 
+			else if (person instanceof limchaesu) 
 			{
-				limchaesu test2 = (limchaesu)object1;
+				limchaesu test2 = (limchaesu)person;
 				test2.walk();
 			}
-			else if (object1 instanceof moonjungseob) 
+			else if (person instanceof moonjungseob) 
 			{
-				moonjungseob test3 = (moonjungseob)object1;
+				moonjungseob test3 = (moonjungseob)person;
 				test3.eat();
 			}
 			
